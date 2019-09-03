@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 
-describe 'form page' do
+describe 'Student form page: ' do
   it 'form renders with the new action' do
     visit new_student_path
     expect(page).to have_content("Student Form")
@@ -56,7 +56,7 @@ describe 'form page' do
   end
 end
 
-describe 'Show page' do
+describe 'Student show page: ' do
   let(:student) { Student.create(first_name: "Daenerys", last_name: "Targaryen") }
 
   it 'renders properly' do
